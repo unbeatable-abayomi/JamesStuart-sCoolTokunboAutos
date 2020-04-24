@@ -53,8 +53,8 @@ namespace JamesStuart_sCoolTokunboAutos_
                     {
                         totalInventory += car.Price;
                         
-                       // GetCarDetails(car.ToString());
-                        GetCarDetails($"{car.Year} {car.CarMake} {car.CarModel} {car.Price:C} \n");
+                       GetCarDetails(car.ToString());
+                       // GetCarDetails($"{car.Year} {car.CarMake} {car.CarModel} {car.Price:C} \n");
                         count++;
                     }
                     GetCarDetails($" Number of Cars: {count} \n Total Inventory : {totalInventory:C}");
