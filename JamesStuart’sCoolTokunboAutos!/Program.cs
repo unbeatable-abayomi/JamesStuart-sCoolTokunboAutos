@@ -9,7 +9,7 @@ namespace JamesStuart_sCoolTokunboAutos_
 
         {
             //local variables
-            string carMake = ""; string carModel = ""; int carYear = 0; decimal price = 0.0m; string check = "";
+            string carMake = ""; string carModel  = ""; int carYear = 0; decimal price = 0.0m; string check = "";
 
             //All Cars List
             List<Car> cars = new List<Car>();
@@ -52,6 +52,8 @@ namespace JamesStuart_sCoolTokunboAutos_
                     foreach (Car car in cars)
                     {
                         totalInventory += car.Price;
+                        
+                       // GetCarDetails(car.ToString());
                         GetCarDetails($"{car.Year} {car.CarMake} {car.CarModel} {car.Price:C} \n");
                         count++;
                     }
@@ -69,15 +71,6 @@ namespace JamesStuart_sCoolTokunboAutos_
               GetCarDetails("Good Bye");
             }
             else { GetCarDetails($"Sorry,but '{check}' is not a valid Command.Pls Try Again"); }
-
-            
-            
-
-            
-
-            
-
-           
 
             
         }

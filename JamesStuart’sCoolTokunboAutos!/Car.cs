@@ -19,5 +19,10 @@ namespace JamesStuart_sCoolTokunboAutos_
             Year = year;
             Price = price;
         }
+
+        public override string ToString()
+        {
+            return $" {Year} {CarMake} {CarModel} {Price:C}";
+        }
     }
 }
